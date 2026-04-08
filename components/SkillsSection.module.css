@@ -1,0 +1,70 @@
+.skillsSection {
+  display: grid;
+  gap: 28px;
+}
+
+.headerBlock {
+  display: grid;
+  gap: 16px;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.skillCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.skillCard h3 {
+  margin: 0;
+}
+
+.skillCard p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.badgeList {
+  display: grid;
+  gap: 18px;
+}
+
+.skillBarItem {
+  display: grid;
+  gap: 10px;
+}
+
+.skillBarItem span {
+  font-weight: 600;
+}
+
+.skillBarBackground {
+  width: 100%;
+  height: 14px;
+  background: var(--surface-soft);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skillBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+@media (max-width: 900px) {
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+}
